@@ -1,0 +1,23 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 3 Mar, 2021, 4:06:01 PM
+    Author     : ITI IND CHNM
+*/
+
+#loginPanel
+{
+    margin-top: 100px;
+    min-height: 200px;
+    border-radius: 10px;
+    background-color: #eeeeee;
+    text-align: center;
+}
+
+.inputbx
+{
+    margin-bottom: 10px;
+}
