@@ -13,7 +13,7 @@ and open the template in the editor.
     margin-top: 100px;
     min-height: 200px;
     border-radius: 10px;
-    background-color: #eeeeee;
+    background-color: rgba(256,256,256,0.7);
     text-align: center;
 }
 
@@ -21,3 +21,18 @@ and open the template in the editor.
 {
     margin-bottom: 10px;
 }
+
+.bgStyle
+{
+    background-image: url("../images/pexels-agung-pandit-wiguna-3401403.jpg");
+}
+
+.big_icon
+{
+    font-size: 50px;
+    color: #2b75e7;
+}
+
+
+
+\

@@ -7,14 +7,18 @@ and open the template in the editor.
 <html>
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>ITI Attendance System</title>
         <link rel="stylesheet" href="bootstrap/bootstrap-3.3.7-dist/css/bootstrap.css">
+        <link rel="stylesheet" href="bootstrap/bootstrap-icons-1.4.0/bootstrap-icons.css">
         <link rel="stylesheet" href="css/style.css"/>
-        <script type="text/javascript" src="bootstrap/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
         <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
-        <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+        <script type="text/javascript" src="bootstrap/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+        
     </head>
-    <body>
+    <body class="bgStyle">
+
+
         <?php
         include_once 'config.php';
         $err="";
@@ -54,17 +58,17 @@ and open the template in the editor.
             <div class="row">
                 <div class="col-lg-3 col-md-3 hidden-sm hidden-xs"></div>
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" id="loginPanel">
-                    <h2>User Login</h2>
+                    <div class="big_icon"><i class="bi-person-circle"></i></div>
                     <form name="login" action="#" method="POST">
                         <div class="input-group inputbx">
-                            <span class="input-group-addon"><ion-icon name="person-circle-outline"></ion-icon></span>
+                            <span class="input-group-addon"><i class="bi-person"></i></span>
                         <input type="text" class="form-control " name="userid" placeholder="Username" >
                         </div>
                         <div class="input-group  inputbx">
-                            <span class="input-group-addon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                            <span class="input-group-addon"><i class="bi-lock"></i></span>
                         <input type="password" class="form-control " name="userpass" placeholder="Password">
                         </div>
-                        <input type="submit" value="Login" class="btn-info btn-sm">
+                        <input type="submit" value="Login" class="btn btn-info btn-sm">
                         <span style="color:red; font-size: 16px"><b><i>
                         <?php
                         if($err!="")
