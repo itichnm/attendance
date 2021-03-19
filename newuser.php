@@ -62,7 +62,7 @@ and open the template in the editor.
                       <li><a href="newuser.php">Create User</a></li>
                   </ul>
                 </li>
-                <li><a href="#">Attendance</a></li>
+                <li><a href="attendance.php">Attendance</a></li>
                 
               </ul>
             </div>
@@ -78,7 +78,17 @@ and open the template in the editor.
                    </div>
                    <div class="input-group">
                        <span class="input-group-addon">Trade</span>
-                       <input class="form-control" name ="trade" type="text">
+                       <select name="trade" class="form-control">
+                           <?php
+                           $tradeName= mysqli_query($con, "select DISTINCT(trade) as Trd from trainee_data");
+                           while ($t = mysqli_fetch_array($tradeName))
+                           {
+                           ?>
+                           <option value="<?php echo $t['Trd']?>"><?php echo $t['Trd']?></option>
+                           <?php
+                           }
+                           ?>
+                       </select>
                    </div>
                </div>
                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">

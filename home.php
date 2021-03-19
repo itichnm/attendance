@@ -32,7 +32,7 @@ and open the template in the editor.
                       <li><a href="newuser.php">Create User</a></li>
                   </ul>
                 </li>
-                <li><a href="#">Attendance</a></li>
+                <li><a href="attendance.php">Attendance</a></li>
                 
               </ul>
             </div>
